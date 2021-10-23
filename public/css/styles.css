@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    max-width: auto;
+    background-color: aquamarine;
+}
+
+.main-nav {
+    font-size: 20px;
+}
+
+.main-nav ul{
+    list-style: none;
+    display: flex;  
+}
+
+.main-nav li{
+    margin: 10px;
+}

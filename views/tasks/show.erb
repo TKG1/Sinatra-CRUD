@@ -1,0 +1,14 @@
+<h1>投稿詳細</h1>
+
+<div>id: <%= @task.id %></div>
+<div>name: <%= @task.name %></div>
+<div>content: <%= @task.content %></div>
+<div>
+    <form action="/tasks/<%= @task.id %>/edit">
+        <input type="submit" value="編集">
+    </form>
+    <form action="/tasks/<%= @task.id %>" method="POST">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="submit" value="削除">
+    </form>
+</div>
